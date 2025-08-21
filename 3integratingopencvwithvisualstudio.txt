@@ -1,0 +1,41 @@
+=================================================================================================================
+Installation and integration  OpenCV 3.1.0 and C++
+Using Windows 10 + Visual Studio 2015 (enterprise Edition) + precompiled binaries
+=================================================================================================================
+
+1) Download and install Visual Studio 2015 enterprise Edition 
+2) Download the latest version of OpenCV, for example OpenCV 3.1.0 as of when this is being written
+3a) Make a folder "C:\OpenCV-X.X.X" for your version of OpenCV, ex. "C:\OpenCV-3.1.0"
+3b) Double-click on the completed OpenCV download executable, then set "Extract to:" to your "C:\OpenCVX.X.X" directory
+4a) Add the bin directory for your version of OpenCV and Visual Studio to the operating system PATH.
+4b) Note: In the OpenCV directories:
+"vc14" => Visual Studio 2015
+For example if you are using OpenCV 3.1.0 and Visual Studio 2015 add the following to your PATH:
+C:\OpenCV-3.1.0\opencv\build\x64\vc14\bin
+4c) Pull up a Command Prompt and verify the bin directory is now in PATH, then reboot
+5) In the Visual Studio toolbar, verify that "Solution Configurations" is set to "Debug", then change "Solution
+Platforms" to "x64" (make sure not to skip this step, or 32-bit vs 64-bit errors will be encountered)
+6) In VS go to:
+Project -> (project name) Properties -> Configuration Properties -> VC++ Directories -> Include Directories
+add the include directory for your version of OpenCV, ex "C:\OpenCV-3.1.0\opencv\build\include"
+7) In VS go to:
+Project -> Properties -> Configuration Properties -> VC++ Directories -> Library Directories:
+add the library directory for your version of OpenCV, ex "C:\OpenCV-3.1.0\opencv\build\x64\vc14\lib"
+8) If you currently do not have Windows 10 configured to allow viewing / editing of file extensions, go to:
+right-click on Start -> Control Panel -> View by: Large icons -> File Explorer Options -> View tab -> uncheck
+"Hide extensions for known file types" (if you already have viewing file extensions enabled then skip this step).
+9) In File Explorer (not within Visual Studio), navigate to the lib directory, ex
+C:\OpenCV-3.1.0\opencv\build\x64\vc14\lib
+In the lib directory you will find the debug libs (ending with a 'd'), for example if you are using OpenCV 3.1.0
+there is only one debug lib:
+opencv_world310d.lib
+Note the 310 is referring to OpenCV 3.1.0 and this will vary by OpenCV version, also which libraries are present
+may vary with OpenCV version.
+Copy/paste the name of the debug lib(s) in the lib directory into the following location in Visual Studio:
+Project -> Properties -> Configuration Properties -> Linker -> Input -> Additional Dependencies
+10) Run the program, either without debugging (choose Debug, then the hollow green arrow, or press Ctrl+F5) or
+with debugging (solid green arrow or press F5)
+11) Once you get the debug build working, if it is too slow and you would like to try the release build, at the top
+of Visual Studio change "Solution Configurations" to "Release", then verify "Solution Platforms" is still "x64"
+(if not, change it to x64), then repeat steps 10 through 13, making the applicable changes for a release
+configuration.

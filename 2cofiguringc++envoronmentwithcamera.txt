@@ -1,0 +1,26 @@
+**************************************************************************************
+************ configuring c++ development environment With Camera SDK *********************************
+
+
+you can directly modify the development settings as follows:
+•	Include Paths:
+       Add any required include paths to the respective project setting.
+ 
+       Include Path                                              Description
+
+    $(RSSDK_DIR)/include                              Required to access I/O module and algorithm module functions
+
+    $(RSSDK_DIR)/sample/common/include                Required to access any utility class functions
+
+•    Library Files and Library Paths: (we use this one)
+ For applications that compile with the dynamic runtime option, the SDK provides prebuilt libraries. Add any required library paths and library files to the respective project setting.
+
+     Library Path                               Library File                       Prebuilt Library Description
+
+$(RSSDK_DIR)/lib/$(PlatformName)               libpxcmd.lib (RELEASE)             SDK library with the dynamic runtime option     
+                                               libpxcmd_d.lib (DEBUG)
+
+
+$(RSSDK_DIR)/sample/common/lib/                libpxcutilsmd.lib (RELEASE)         SDK utility library with the dynamic runtime option
+$(PlatformName)/$(PlatformToolset)             libpxcutils_dmd.lib (DEBUG)
+
