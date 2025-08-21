@@ -1,4 +1,4 @@
-# intelrealsense_3D_Camera for obstacle detection and guidance  
+# Intel RealSense  3D Camera for Obstacle Detection and Guidance  
 ## for visually impaired people.
 
 A simple project for working with the Intel RealSense R200 camera using both an executable and Visual Studio project.
