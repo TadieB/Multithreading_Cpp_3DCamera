@@ -1,7 +1,7 @@
 # Intel RealSense  3D Camera for Obstacle Detection and Guidance  
 ## for visually impaired people.
 
-A simple project for working with the Intel RealSense R200 camera using both an Multithreading C++. 
+A Multithreading C++ project for working with the Intel RealSense R200 camera to detect obstacles and guide visually impaired people. 
 
 - **Visual Studio 2015** with Visual C++ support installed.
 - **Intel RealSense R200 SDK** installed and correctly configured.
