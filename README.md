@@ -1,30 +1,72 @@
-# intelrealsense_3D_Camera
+# intelrealsense_3D_Camera for obstacle detection and guidance system 
+## for visually impaired people.
 
-************************************************************************
-****** how to use the the uploaded project folder **********************
+A simple project for working with the Intel RealSense R200 camera using both an executable and Visual Studio project.
 
-** we uploaded resources of this project in two folders
+---
 
-    1. The folder named by " executableFile  " contains the stand alone excuitable (.exe) file 
-   
-      ++ requirement for the software: fulfil the general requiremets
-      ++ double clicking the file will install it
+## ​ Project Structure
 
-    2. the visual studio project folder " Obstacle". it contains the debug and release 
-        version 
-(first, start Visual studio 2015, start realsense SDK and then one can open the existing project 'Obstacle', finally run. that is it)
-      
-      ++ requirement: I)  visual studio with visual c++ installed 
-                      II) installed and working Realsense R200 camera software development 
-                          kit (sdk). for installation refer to this link 
-                              https://software.intel.com/en-us/videos/intel-realsense-hardware-requirements 
-  			https://software.intel.com/sites/default/files/managed/8c/ab/intel-realsense-gettingstarted.pdf
-   
-** the procedure for integrating opencv and sdk are provided in separate notepads
+1. **`executableFile/`**  
+   Contains a standalone `.exe` installer for the project.
 
-*******************************************************************************************
-****************************** General Requirements ****************************************
+2. **`Obstacle/`**  
+   Visual Studio project directory including both Debug and Release builds.
 
-     Processors:    4th generation and future IntelÆ Coreô Processors
-Operating Systems:    - Microsoft* Windows 8.1 (64-bit only)
-                      - Microsoft* Windows 10 (64-bit only)
+---
+
+##  Getting Started
+
+### 1. Using the Executable
+
+- Ensure your system meets the **general requirements** listed below.  
+- Double-click the `.exe` file in `executableFile/` to install and run the application.
+
+### 2. Using the Visual Studio Project
+
+1. Launch **Visual Studio 2015**.  
+2. Make sure to **start the Intel RealSense SDK** before opening the project.  
+3. Navigate to `Obstacle/`, open the Visual Studio solution, and **build/run**.  
+4. That’s it—your project should compile and run.
+
+---
+
+##  Prerequisites
+
+- **Visual Studio 2015** with Visual C++ support installed.
+- **Intel RealSense R200 SDK** installed and correctly configured.
+
+Refer to Intel’s documentation for setup instructions:  
+- Hardware requirements overview  
+- RealSense SDK installation guide
+
+---
+
+##  Project Setup Notes
+
+Integration steps for OpenCV and the Intel RealSense SDK are documented in separate `.txt` files within the project folders.
+
+---
+
+##  General System Requirements
+
+- **Processor**: Intel 4th generation Core or newer  
+- **Operating System**:  
+  - Windows 8.1 (64-bit)  
+  - Windows 10 (64-bit)
+
+---
+
+##  Quick Overview
+
+| Feature                     | Details                                    |
+|-----------------------------|--------------------------------------------|
+| Executable Installer        | Run the `.exe` from `executableFile/`      |
+| Visual Studio Project       | Found in `Obstacle/` — requires SDK & VS15 |
+| Dependencies Documentation  | Included as separate `.txt` files          |
+| Supported Hardware & OS     | Intel Core (4th+), Windows 8.1/10 (64-bit)  |
+
+---
+
+Let me know if you’d like additional enhancements—like adding badges, contribution guidelines, license info, or usage examples!
+::contentReference[oaicite:0]{index=0}
